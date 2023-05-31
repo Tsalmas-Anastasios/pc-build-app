@@ -1,0 +1,17 @@
+.tableSpecs {
+  font-family: Verdana;
+  border-collapse: collapse;
+  width: 90%;
+  table-layout: fixed;
+}
+
+.rowsOnSpecs {
+  text-align: left;
+  padding: 8px;
+  word-wrap: break-word;
+  width: 30%;
+}
+
+.rowsOnSpecsTR:nth-child(even) {
+  background-color: #e6e6e6;
+}

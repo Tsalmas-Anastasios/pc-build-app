@@ -1,0 +1,183 @@
+.pc-build-card {
+	background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: verdana;
+    width: 80%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.pc-build-card .table-structure {
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    width: 100%;
+    display: table;
+  	border-collapse: collapse;
+}
+
+.pc-build-card .table-structure .image-td {
+	width: 174px;
+}
+
+.pc-build-card .table-structure .image-td .image-area .image {
+	width: 182px;
+    transition: 0.5s;
+}
+
+.pc-build-card .table-structure .table-specs th {
+	text-align: center;
+}
+
+.pc-build-card .table-structure .table-general-informations {
+	margin-bottom: 10px;
+    display: table;
+  	border-collapse: collapse;
+    width: 100%;
+}
+
+.pc-build-card .table-structure .table-general-informations td, .pc-build-card .table-structure .table-general-informations th {
+	padding: 5px;
+}
+
+.pc-build-card .table-structure .table-specs {
+	width: 100%;
+    display: table;
+  	border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.pc-build-card .table-structure .table-specs th, .pc-build-card .table-structure .table-specs td {
+	padding: 5px;
+}
+
+.pc-build-card .table-structure .table-specs th {
+	background-color: #1a0033fa;
+    color: white;
+}
+
+.pc-build-card .table-structure .table-specs td {
+	border-bottom: 2px solid #1a0033fa;
+}
+
+.pc-build-card .table-structure .table-specs .price {
+	text-align: right;
+}
+
+.pc-build-card .table-structure .table-specs .remove-line {
+	display: none;
+}
+
+.pc-build-card .table-structure .table-specs .remove-line td {
+	border-bottom: none;
+}
+
+.pc-build-card .table-structure .button-area {
+	text-align: right;
+}
+
+.pc-build-card .table-structure .button-area .dismiss, .pc-build-card .table-structure .button-area .buy-it {
+	font-size: 15px;
+    padding: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2px solid #1a0033fa;
+    border-radius: 6px;
+    background-color: #1a0033fa;
+    color: #fff;
+    outline: none;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.pc-build-card .table-structure .button-area .dismiss:hover, .pc-build-card .table-structure .button-area .buy-it:hover {
+	background-color: #fff;
+    color: #1a0033fa;
+}
+
+@media screen and (max-width: 944px) {
+	.pc-build-card .table-structure .button-area .dismiss, .pc-build-card .table-structure .button-area .buy-it {
+    	padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+	.pc-build-card .table-structure .table-specs {
+    	font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+	.pc-build-card {
+    	padding: 0px;
+    }
+    
+    .pc-build-card .table-structure .image-td, .pc-build-card .table-structure .other-td {
+    	display: block;
+    	padding: 10px;
+    }
+    
+    .pc-build-card .table-structure .image-td {
+    	width: 100%;	
+    }
+    
+    .pc-build-card .table-structure .image-td {
+    	padding: 0;
+        text-align: center;
+    }
+    
+    .pc-build-card .table-structure .image-td .image-area .image {
+    	width: 260px;
+    }
+    
+    .pc-build-card .table-structure .table-general-informations td {
+    	display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+	.pc-build-card .table-structure .table-specs th, .pc-build-card .table-structure .table-specs td {
+    	display: block;
+    }
+    
+    .pc-build-card .table-structure .table-specs .price {
+    	text-align: left;
+    }
+    
+    .pc-build-card .table-structure .table-specs .remove-line {
+    	display: block;
+    }
+}
+
+@media screen and (max-width: 545px) {
+	.pc-build-card .table-structure .button-area .dismiss, .pc-build-card .table-structure .button-area .buy-it {
+    	width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+	.pc-build-card {
+    	font-size: 13px;
+        width: 90%;
+        margin: 5px;
+    }
+    
+	.pc-build-card .table-structure .image-td .image-area .image {
+    	width: 100%;
+    }
+    
+    .pc-build-card .table-structure .button-area {
+    	text-align: center;
+    }
+}

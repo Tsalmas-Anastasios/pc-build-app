@@ -1,0 +1,95 @@
+/* The container */
+.containerCheckBoxCold-White {
+  display: block;
+  position: relative;
+  top: 10px;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Verdana;
+}
+
+/* Hide the browser's default checkbox */
+.CheckBoxCold-White {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkCheckBoxCold-White {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border-radius: 3px;
+  background-image: url('http://pc-build-webapp.000webhostapp.com/Pictures/StyleSheets/RGB-Pictures/cold-white.png');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheckBoxCold-White:hover ~ .checkmarkCheckBoxCold-White {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.CheckBoxCold-White:checked ~ .checkmarkCheckBoxCold-White {
+  background-color: #1a0033fa;
+  background-image: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkCheckBoxCold-White:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.CheckBoxCold-White:checked ~ .checkmarkCheckBoxCold-White:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckBoxCold-White .checkmarkCheckBoxCold-White:after {
+  left: 7.48px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width:800px) {
+	.containerCheckBoxCold-White {
+    	margin-bottom: 7px;
+        font-size: 15px;
+        padding-left: 23px;
+    }
+    
+    .checkmarkCheckBoxCold-White {
+    	width: 18px;
+        height: 18px;
+        background-size: 18px 18px;
+    }
+    
+    .containerCheckBoxCold-White .checkmarkCheckBoxCold-White:after {
+      left: 5.5px;
+      top: 2.5px;
+      width: 3px;
+      height: 6.5px;
+    }
+}

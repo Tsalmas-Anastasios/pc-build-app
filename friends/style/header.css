@@ -1,0 +1,38 @@
+.header {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+.header .go-back .link {
+    color: #1a0033fa;
+    font-family: verdana;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .image {
+    text-align: center;
+}
+
+.header .image .img {
+    width: 60%;
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 890px) {
+    .header .image .img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header .image .img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header .go-back .link {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}

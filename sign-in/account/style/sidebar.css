@@ -1,0 +1,254 @@
+body {
+    font-family: verdana;
+    background-color: #f3f3f3;
+}
+
+.sidebar {
+    background-color: #1a0033fa;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 99999999999999;
+    width: 250px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    box-shadow: 0 12px 16px 9px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    display: none;
+}
+
+.sidebar .category {
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidebar .sub-category {
+    padding-left: 20px;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 0.5s;
+}
+
+.sidebar .sub-sub-category {
+    padding-left: 40px;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+.sidebar .link-iframe {
+    color: #fff;
+}
+
+.sidebar .account-hr {
+    border: 1px solid #fff;
+}
+
+.sidebar .image {
+    width: 15%;
+    margin-right: -15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a0033fa;
+    background-color: white;
+    padding: 6px;
+    border-radius: 5px;
+    width: 43%;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.link:hover {
+    color: white;
+    background-color: #1a0033fa;
+}
+.home {
+    float: left;
+}
+.e-shop {
+    float: right;
+}
+
+.icon-open-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #1a0033fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    box-shadow: 0 8px 12px 0px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    display: block;
+}
+
+.username {
+    margin-left: -185px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-sidebar {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#br-after-close-button {
+    display: block;
+}
+
+.main {
+    border: 2px solid #f3f3f3;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.7s;
+    text-align: center;
+}
+
+@media  screen and (max-width: 700px) {
+    .sidebar {
+        display: none;
+        font-size: 13px;
+        width: 200px;
+    }
+    .username {
+        font-size: 13px;
+        margin-left: -142px;
+    }
+    #br-after-close-button {
+        display: block;
+    }
+    .main {
+        border: 2px solid #f3f3f3;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+.main-panel-dashboard {
+    font-family: verdana;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    text-align: center;
+}
+
+.main-panel-dashboard-message {
+    border: none;
+    background-color: #999999;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 650px;
+    text-align: center;
+}
+
+.main-panel-dashboard-img {
+    width: 40%;
+    transition: 0.4s;
+}
+
+@media screen and (max-width:1000px) {
+    .main-panel-dashboard-img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-panel-dashboard-message {
+        font-size: 15px;
+        width: 580px;
+    }
+}  
+
+@media screen and (max-width:650px) {
+    .main-panel-dashboard-message {
+        font-size: 13px;
+        width: 503px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-panel-dashboard-message {
+        font-size: 11px;
+        width: 90%;
+    }
+
+    .main-panel-dashboard-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .main-panel-dashboard-message {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .main-panel-dashboard-img {
+        width: 90%;
+    }
+}
+    
+@media screen and (max-width:140px) {
+    .main-panel-dashboard-message {
+        width: 80%;
+    }
+}

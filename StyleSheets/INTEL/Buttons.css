@@ -1,0 +1,64 @@
+.btnBackToCategoriesINTEL {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #0071c5;
+    text-decoration: none;
+
+}
+
+.btnBackToCategoriesINTEL:hover {
+    background-color: #000ed3;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/*------------------------------------------------------------------------------------------------------------*/
+
+.goToList {
+  font-size: 35px;
+}
+
+.categoryHeader{
+  font-size: 30px;
+}

@@ -1,0 +1,195 @@
+.add {
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.address  {
+  float: center;
+  text-align: center;
+}
+
+.address .table {
+  width: 100%;  
+}
+
+.address .table .row td {
+  display: inline-block;  
+}
+
+.address .table .row .card-td1 .card-plus {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.7s;
+  font-family: verdana;
+  width: 250px;
+  height: 340px;
+  cursor:pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.address .table .row .card-td1 .card-plus:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.address .table .row .card-td1 .card-plus .image-plus {
+  padding: 15px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.address .table .row .card-td1 .card-plus .image-plus .img {
+  font-size: 150px;
+  color: #a6a6a6;
+}
+
+.address .table .row .card-td1 .card-plus .text {
+  text-align: center;
+  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  color: #a6a6a6;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.address .table .row .card {
+  background-color: #fff;
+  font-family: verdana;
+  border-radius: 10px;
+  width: 250px;
+  height: 340px;
+  transition: 0.7s;
+  cursor:pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.address .table .row .card:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.address .table .row .card .title hr, .table .row .card .text hr {
+  border: 1px solid #1a0033fa;
+  border-radius: 50px;
+}
+
+.address .table .row .card .title {
+  font-size: 17px;
+  padding: 15px;
+  padding-bottom: 0;
+  font-weight: bold;
+  color: #737373;
+}
+
+.address .table .row .card .title .ellipsis {
+  font-size: 15px;
+  color: #b3b3b3;
+  float: right;
+  transition: 0.7s;
+}
+
+.address .table .row .card .title .ellipsis:hover {
+  color: #1a0033fa;
+}
+
+.address .table .row .card .text {
+  font-size: 13px;
+  padding: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #8c8c8c;
+}
+
+.address .table .row .card .text .info {
+  display: block;
+}
+
+.address .table .row .card .options {
+  text-align: right;
+  align-items: right;
+}
+
+.address .table .row .card .options .opt {
+  float: right;
+  background-color: #ccc;
+  padding: 10px;
+  z-index: 9999999;
+  color: #595959;
+  border-radius: 10px;
+  position: relative;
+  right: -97px;
+  text-align: left;
+}
+
+.address .table .row .card .options a {
+  display: block;
+  padding: 4px;
+}
+
+.address .table .row .card .options a:hover {
+  color: #333333;
+}
+
+@media screen and (max-width: 1150px) {
+  .add {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .address {
+    text-align: left;
+    width: 870px;
+  }  
+  
+  .address .table {
+    width: 870px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .address {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .address .table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .address  {
+    float: center;
+    text-align: center;
+  }
+}

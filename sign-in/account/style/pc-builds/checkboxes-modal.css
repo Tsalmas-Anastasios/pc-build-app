@@ -1,0 +1,109 @@
+/* The container */
+.friend {
+    display: block;
+    position: relative;
+    padding-left: 33px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: verdana;
+    color: #1a0033fa;
+    transition: 0.5s;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .friend input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .friend-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .friend:hover input ~ .friend-check {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .friend input:checked ~ .friend-check {
+    background-color: #1a0033fa;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .friend .friend-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .friend input:checked ~ .friend-check:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .friend .friend-check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  @media screen and (max-width: 400px) {
+      .friend {
+          font-size: 18px;
+          padding-left: 30px;
+      }
+      
+      .friend .friend-check {
+          height: 23px;
+            width: 23px;
+      }
+      
+      .friend .friend-check:after {
+          left: 8px;
+            top: 4px;
+          width: 4.5px;
+            height: 9px;
+      }
+  }
+  
+  @media screen and (max-width: 320px) {
+      .friend {
+          font-size: 15px;
+          padding-left: 25px;
+      }
+      
+      .friend .friend-check {
+          height: 20px;
+            width: 20px;
+      }
+      
+      .friend .friend-check:after {
+          left: 7px;
+            top: 3px;
+          width: 4px;
+            height: 8px;
+      }
+  }

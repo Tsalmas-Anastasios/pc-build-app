@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="../../logo/pictureForTabs.png" />	<!--Icon στην tab στον browser-->
+        <title>No access!</title>
+        <link rel="stylesheet" href="for-error-page.css">
+        <link rel="stylesheet" href="../../StyleSheets/TopNav.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	    <script src="https://kit.fontawesome.com/252e2148d4.js" crossorigin="anonymous"></script>
+        <style>
+            img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <BODY BGCOLOR="#fff" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BOTTOMMARGIN="0" onresize="WindowResize()" onload="WindowResize()" oncontextmenu="return false">
+        <!--TopNav-->
+        <div id="myTopnav" class="topnav" style="z-index: 9999;">
+            <a href="../index"><i class="fa fa-fw fa-home"></i> Home</a>
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-desktop"></i> PC Builder
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../Pages/PCBuilderAMD"><i class="fas fa-desktop"></i> AMD</a>
+                <a href="../Pages/PCBuilderINTEL"><i class="fas fa-desktop"></i> INTEL</a>
+                <a href="../Pages/service/index"><i class="fas fa-tools"></i> Service</a>
+            </div>
+            </div>
+            <a href="../eshop/index" target="_blank"><i class="fas fa-cart-arrow-down"></i> e-Shop</a>
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-user-friends"></i> Friends
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../friends/index" target="_blank"><i class="fas fa-user-friends"></i> Friends</a>
+                <a href="../friends/chat" target="_blank"><i class="fas fa-comments"></i> Chat</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-lightbulb"></i> Tips
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../forum/index"><i class="fas fa-comment-alt"></i> Forum</a>
+                <a href="../instructions/index"><i class="fas fa-question"></i> How to...</a>
+            </div>
+            </div>
+            <a href="#news"><i class="far fa-newspaper"></i> News</a>
+            <div class="dropdown">
+            <button class="dropbtn"><i class="far fa-plus-square"></i> More
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#donate"><i class="fas fa-donate"></i> Donate</a>
+                <a href="#contactUs"><i class="fas fa-envelope-open-text"></i> Contact Us</a>
+                <a href="../Pages/report-a-problem"><i class="fas fa-exclamation-triangle"></i> Report a problem</a>
+                <a href="#partners"><i class="fas fa-store-alt"></i> Partner Shops</a>
+                <a href="#aboutUs"><i class="far fa-address-card"></i> About Us</a>
+            </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!--TopNav-->
+        <br><br>
+        <center><div class="no-access-header">No access!</div>
+
+        <div class="no-access-after-header">
+            You haven't access in this page with this way!
+        </div></center><br>
+        
+        <center><div class="no-access-links" style="width: 90%;">
+            Go to <a href="../../index" class="link">Home page</a> or you can make your own <a href="../../Pages/PCBuilderAMD" class="link">AMD</a> or <a href="../../Pages/PCBuilderINTEL" class="link">INTEL</a> PC Build!
+        </div></center>
+        
+        <a href="../../index"><br><br><center><img src="../../logo/LogoRight.png" align="middle" alt="logo" class="img-logo"><!-- width="14%" --></center></a>
+
+        <script>
+            //ΜΠΑΡΑ ΕΠΙΛΟΓΩΝ
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+            //ΜΠΑΡΑ ΕΠΙΛΟΓΩΝ
+        </script>
+    </BODY>
+</html>

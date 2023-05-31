@@ -1,0 +1,233 @@
+.tableOnTopReadyPieces-Maximum {
+  display: table;
+  border-collapse: collapse;
+  font-family: Verdana;
+  width: 100%;
+  font-size: 19px;
+  align: center;
+}
+
+.links-for-add-in-specs {
+  text-decoration: none;
+  cursor: pointer;
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.links-for-add-in-specs:hover {
+  text-decoration: underline;
+}
+
+.links-for-specs {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4ad812;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.links-for-specs .tooltiptext {
+  font-size:13px;
+  visibility: hidden;
+  width: 170px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  margin-bottom: -3px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.links-for-specs .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.links-for-specs:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.link-for-non-delete-specs {
+  text-decoration: none;
+    cursor: pointer;
+    color: #4ad812;
+    font-weight: bold;
+}
+
+.link-for-non-delete-specs:hover {
+  text-decoration: underline;
+}
+
+
+.link-action {
+	text-decoration: none;
+    color: white;
+}
+
+.link-action:hover {
+	text-decoration: underline;
+}
+
+.slash {
+	color: #555;
+}
+
+
+.links-for-specs:hover {
+	text-decoration: underline;
+}
+
+.thOnTopReadyPieces-Maximum {
+  border: 2px solid #1a0033fa;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  cursor: context-menu;
+  align: center;
+}
+
+.trForthOnTopReadyPieces-Maximum {
+  border: 2px solid #1a0033fa;
+  background-color: #1a0033fa;
+}
+
+.tdOnTopReadyPieces-Maximum {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: context-menu;
+}
+.leftAlignTD {
+  text-align: center;
+}
+
+.trChangeColorForAll-Maximum {
+  border-bottom: 2px solid #1a0033fa;
+}
+
+/*******************************/
+
+.tableOnTopReadyPieces-Minimum {
+  display: none;
+  border-collapse: collapse;
+  font-family: Verdana;
+  width: 100%;
+  border: 1px solid #1a0033fa;
+  font-size: 14.5px;
+  align: center;
+}
+
+.thOnTopReadyPieces-Minimum {
+  width: 100%;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  cursor: context-menu;
+  align: center;
+  background-color: #1a0033fa;
+  font-size: 18px;
+}
+
+.tdOnTopReadyPieces-Minimum {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: context-menu;
+}
+
+.trChangeColorForAll-Minimum {
+  border: 1px solid #1a0033fa;
+}
+
+.titleForBrandAll {
+	padding: 5px;
+    font-weight: bold;
+}
+
+.otherSpecsForAll {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.br-after-min-cards {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.tableOnTopReadyPieces-Maximum {
+    	font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.tableOnTopReadyPieces-Maximum {
+    	display: none;
+    }
+    
+   .tableOnTopReadyPieces-Minimum {
+		display: table;
+  }
+    
+  .br-after-min-cards {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 200px) {
+	.thOnTopReadyPieces-Minimum {
+    	font-size: 14px;
+    }
+    
+    .tableOnTopReadyPieces-Minimum {
+    	font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 140px) {
+	.thOnTopReadyPieces-Minimum {
+    	font-size: 12px;
+        padding-left: 2.5px;
+  		padding-right: 2.5px;
+    }
+    
+    .tableOnTopReadyPieces-Minimum {
+    	font-size: 7.5px;
+    }
+    
+    .otherSpecsForAll {
+		padding-left: 2.5px;
+		padding-right: 2.5px;
+	}
+    
+    .titleForBrandAll {
+		padding-left: 2.5px;
+    	padding-right: 2.5px;
+	}
+}

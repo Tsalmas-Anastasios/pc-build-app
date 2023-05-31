@@ -1,0 +1,336 @@
+.order-card {
+	background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: verdana;
+    width: 80%;
+}
+
+.order-card .table-structure {
+	width: 100%;
+}
+
+.order-card .table-structure .image-td {
+	width: 174px;
+}
+
+.order-card .image-area .image {
+	width: 172px;
+}
+
+.order-card .button-area {
+	text-align: right;
+}
+
+.order-card .button-area .see-more {
+	padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border: 2px solid #1a0033fa;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    color: #1a0033fa;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.button-area .see-more:hover {
+	background-color: #1a0033fa;
+    color: white;
+}
+
+/*FOUR CONDITIONS FOR ORDERS:
+	1. PLACED		Icon: <i class="fas fa-location-arrow"></i>
+    2. SAVED		Icon: <i class="fas fa-bookmark"></i>
+    3. DELETED		Icon: <i class="fas fa-trash"></i>
+    4. COMPLETED	Icon: <i class="fas fa-check-circle"></i>
+*/
+.order-card .order-condition .text {
+    font-weight: bold;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-card .order-condition .complete {
+	color: #00cc00;
+}
+
+.order-card .order-condition .delete {
+	color: #e60000;
+}
+
+.order-card .order-condition .placed {
+	color: #ff6600;
+}
+
+.order-card .order-condition .saved {
+	color: #0066ff;
+}
+/*FOUR CONDITIONS FOR ORDERS:
+	1. PLACED		Icon: <i class="fas fa-location-arrow"></i>
+    2. SAVED		Icon: <i class="fas fa-bookmark"></i>
+    3. DELETED		Icon: <i class="fas fa-trash"></i>
+    4. COMPLETED	Icon: <i class="fas fa-check-circle"></i>
+*/
+
+.order-card .order-address {
+	font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.order-card .order-address .title, .order-card .order-date .title, .order-card .order-number .title, .order-card .order-total .title {
+	color: #a6a6a6;
+}
+
+.order-card .order-date, .order-card .order-number, .order-card .order-total {
+	font-size: 15px;
+    display: inline-block;
+}
+
+.order-card .order-date {
+    margin-right: 20px;
+}
+
+.order-card .order-number {
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+.order-card .order-total {
+    margin-left: 20px;
+}
+
+.order-card .informations {
+	margin-top: 45px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.order-card .informations .pay, .order-card .informations .total-prod {
+	display: inline-block;
+}
+
+.order-card .informations .pay .title {
+	color: #a6a6a6;
+}
+
+.order-card .informations hr {
+	border: 1px solid #1a0033fa;
+}
+
+.order-card .informations .pay, .order-card .informations .table-total {
+	display: inline-block;
+}
+
+.order-card .informations .table-total {
+	float: right;
+    display: table;
+  	border-collapse: collapse;
+}
+
+.order-card .informations .table-total td {
+	padding-bottom: 4px;
+}
+
+.order-card .informations .table-total .prod-cost .title, .order-card .informations .table-total .transfer-cost .title, .order-card .informations .table-total .total-cost .title {
+	padding-right: 60px;
+    color: #a6a6a6;
+}
+
+.order-card .informations .table-total .total-cost .title, .order-card .informations .table-total .total-cost .text {
+	border-top: 2px solid #1a0033fa;
+}
+
+.order-card .informations .table-total .text {
+	text-align: right;
+}
+
+.order-card .informations #br-before-table {
+  	display: none;
+}
+
+.order-card .informations .table-products {
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    display: table;
+  	border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.order-card .informations .table-products .title {
+	background-color: #1a0033fa;
+}
+
+.order-card .informations .table-products th, .order-card .informations .table-products td {
+	padding: 8px;
+}
+
+.order-card .informations .table-products .title th {
+	text-align: center;
+    background-color: #1a0033fa;
+    color: #fff;
+}
+
+.order-card .informations .table-products td {
+	border-bottom: 2px solid #1a0033fa;
+}
+
+.order-card .informations .table-products .blank-tr td {
+	border-bottom: none;
+    display: none;
+}
+
+@media screen and (max-width: 805px) {
+	.order-card {
+    	width: 90%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+	.order-card .order-date {
+        margin-right: 10px;
+    }
+
+    .order-card .order-number {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .order-card .order-total {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+	.order-card {
+    	padding: 10px;
+    }
+    
+    .order-card .button-area .see-more {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+	.order-card .order-date, .order-card .order-number, .order-card .order-total {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .order-card .order-date {
+        margin-right: 0;
+    }
+
+    .order-card .order-number {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .order-card .order-total {
+        margin-left: 0;
+    }
+    
+    .order-card .informations .pay, .order-card .informations .table-total {
+    	display: block;
+    }
+    
+    .order-card .informations .table-total {
+    	float: none;
+        margin-left: -3px;
+    }
+    
+    .order-card .informations #br-before-table {
+    	display: block;
+    }
+    
+    .order-card .informations #br-after-table {
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	.order-card {
+    	padding: 0;
+    }
+    
+    .order-card .table-structure td {
+    	display: block;
+        padding: 20px;
+    }
+    
+    .order-card .table-structure .image-td {
+    	width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .order-card .table-structure .image-td .image-area .image {
+    	width: 60%;
+    }
+    
+    .order-card .informations {
+    	padding: 20px;
+    }
+    
+    .order-card .informations {
+    	margin-top: -40px;
+    }
+    
+    .order-card .button-area .see-more {
+    	font-size: 12px;
+    }
+    
+    .order-card .order-condition .text {
+    	font-size: 18px;
+    }
+    
+    .order-card .order-address {
+    	font-size: 12px;
+    }
+    
+    .order-card .order-date, .order-card .order-number, .order-card .order-total {
+    	font-size: 12px;
+    }
+    
+    .order-card .informations {
+    	font-size: 12px;
+    }
+    
+    .order-card .informations .table-total td {
+    	display: block;
+        text-align: left;
+    }
+    
+    .order-card .informations .table-total .text {
+    	text-align: left;
+    }
+    
+    .order-card .informations .table-total .prod-cost .title {
+    	border-top: 2px solid #1a0033fa;
+    }
+    
+    .order-card .informations .table-total .total-cost .title, .order-card .informations .table-total .total-cost .text {
+    	border: none;
+    }
+    
+    .order-card .informations .table-products th, .order-card .informations .table-products td {
+    	display: block;
+    }
+    
+    .order-card .informations .table-products .blank-tr td {
+        display: block;
+    }
+}

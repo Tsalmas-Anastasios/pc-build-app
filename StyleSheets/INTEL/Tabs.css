@@ -1,0 +1,31 @@
+.TabsBtn {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 8px;
+  background-color: #0071c5;
+  color: white;
+  border: 2px solid #0071c5;
+  text-decoration: none;
+  font-size: 25px;
+  outline: none;
+}
+
+.TabsBtn:hover {
+  background-color: white; 
+  color: #0071c5;
+}
+
+@media screen and (max-width: 800px) {
+  .TabsBtn {
+      width: 90%;
+      font-size: 15px;
+  }
+}

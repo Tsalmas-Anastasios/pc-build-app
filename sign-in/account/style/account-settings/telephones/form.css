@@ -1,0 +1,130 @@
+.form {
+    font-family: verdana;
+    font-size: 24px;
+    width: 475px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 5px;
+    text-align: center;
+    border: 2px solid #1a0033fa;
+    border-radius: 10px;
+  }
+  
+  .form .mobile, .form .tele {
+    text-align: left;
+    padding: 8px;
+    color: #1a0033fa;
+  }
+  
+  .form .mobile .label {
+     margin-right: 57px;
+  }
+  
+  .form .tele .label {
+    margin-right: 5px;
+  }
+  
+  .form .mobile .label:after {
+    content: ' Mobile';
+  }
+  
+  .form .tele .label:after {
+    content: ' Telephone';
+  }
+  
+  .form .mobile .text-box, .form .tele .text-box {
+    font-family: verdana;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #1a0033fa;
+    border-radius: 6px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+  }
+  
+  .form #error-message {
+    font-size: 12px;
+    text-align: left;
+    float: left;
+    margin-top: 5px;
+    margin-left: 9px;
+    color: #ff0000;
+    display: block;
+  }
+  
+  .form .submit-btn {
+    text-align: right;
+    padding: 10px;
+    display: block;
+    padding-top: 30px;
+  }
+  
+  .form .submit-btn .submit {
+    font-size: verdana;
+    padding: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    background: #1a0033fa;
+    border: 2px solid #1a0033fa;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+    outline: none;
+  }
+  
+  .form .submit-btn .submit:hover {
+    background-color: #fff;
+    color: #1a0033fa;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .form {
+      width: 100%;
+      border: none;
+    }
+  }
+  
+  @media screen and (max-width: 476px) {
+    .form {
+      width: 346px;  
+    }
+    
+    .form .mobile .label {
+      margin-right: 13px;  
+    }
+    
+    .form .mobile .label:after {
+      content: '';
+    }
+    
+    .form .tele .label:after {
+      content: '';
+    }
+  }
+  
+  @media screen and (max-width: 356px) {
+    .form {
+      width: 194px;
+    }
+    
+    .form .mobile .text-box {
+      font-size: 16px;
+      width: 105px;
+    }
+    
+    .form .tele .text-box {
+      font-size: 16px;
+      width: 105px;
+    }
+    
+    .form .submit-btn .submit {
+      font-size: 16px;
+      width: 100%;
+    }
+  }

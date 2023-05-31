@@ -1,0 +1,38 @@
+  .pictureAMDLogo {
+    width: 30%;
+  }
+
+  .imgLogoLinkForEShop{
+    width: 50%;
+  }
+
+@media screen and (max-width:800px) {
+    .imgForHomeScreen {
+      width: 100%;
+    }
+
+    .categoryHeader {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .mobileHeader {
+      display: block;
+    }
+    
+    .desktopHeader {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:850px) {
+    .pictureAMDLogo {
+      width: 90%;
+    }
+
+    
+    .imgLogoLinkForEShop{
+      width: 70%;
+    }
+  }

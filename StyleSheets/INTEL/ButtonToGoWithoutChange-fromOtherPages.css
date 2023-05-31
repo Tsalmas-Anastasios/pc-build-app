@@ -1,0 +1,51 @@
+.button-go-without-changing {
+	background-color: #0071c5;
+    color: white;
+    float: right;
+    font-family: verdana;
+    border: 2px solid #0071c5;
+    border-radius: 10px;
+    margin: 4px 2px;
+    padding: 5px 20px;
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-go-without-changing:before {
+	content: 'Countinue without change ';
+}
+
+.button-go-without-changing:focus {
+	background-color: #ffffff;
+    color: #0071c5;
+}
+
+@media screen and (max-width: 700px) {
+    .button-go-without-changing {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button-go-without-changing:before {
+        content: '';
+    }
+    
+    .button-go-without-changing {
+        margin: 2px;
+        padding-right: 8px;
+        padding-left: 8px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+	.button-go-without-changing {
+    	font-size: 10px;
+    }
+}

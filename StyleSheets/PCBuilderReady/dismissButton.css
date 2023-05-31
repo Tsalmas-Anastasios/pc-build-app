@@ -1,0 +1,33 @@
+.dismiss-spec-peripheral-initial {
+	font-family: verdana;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    color: #ffffff;
+    background-color: #ff0000;
+    font-weight: bold;
+    padding: 4px;
+    float: right;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dismiss-spec-peripheral-initial:hover {
+	color: #ff0000;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 330px) {
+	.dismiss-spec-peripheral-initial {
+    	font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 70px) {
+	.dismiss-spec-peripheral-initial {
+    	font-size: 10px;
+        width: 100%;
+        font-size: 5px;
+    }
+}

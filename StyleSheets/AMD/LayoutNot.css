@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana;
+}
+
+.frameForProductCards {
+    margin: 30px;
+}
+
+.backToCategoriesButton {
+    margin: 10px;
+}
+
+.goToList {
+    margin: 15px;
+}

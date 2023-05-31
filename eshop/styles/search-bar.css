@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search-area {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: block;
+    float: none;
+}
+
+.search-area .search-form {
+    text-align: center;
+}
+
+.search-area .search-form #search-bar {
+    font-family: Verdana;
+    padding: 12px 10px 12px 40px;
+    outline: none;
+    border: 2px solid #1a0033fa;
+    border-radius: 8px;
+    width: 600px;
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 610px) {
+    .search-area .search-form #search-bar {
+        width: 95%;
+    }
+}

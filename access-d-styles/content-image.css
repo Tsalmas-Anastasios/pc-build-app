@@ -1,0 +1,14 @@
+.content .img {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content .img .image {
+    width: 90%;
+}
+
+@media screen and (max-width: 615px) {
+    .content .img .image {
+        width: 100%;
+    }
+}

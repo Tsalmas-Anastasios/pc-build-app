@@ -1,0 +1,91 @@
+.non-compatible-motherboard {
+    font-family: verdana;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .non-compatible-motherboard-message {
+    border: none;
+    background-color: #999999;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 650px;
+    text-align: center;
+  }
+
+  .non-compatible-motherboard-img {
+    width: 40%;
+    transition: 0.4s;
+  }
+
+  .noCPU {
+    text-decoration: none;
+    cursor: pointer;
+    color: #b30000;
+  }
+  
+  .noCPU:hover {
+      text-decoration: underline;
+  }
+  
+  @media screen and (max-width:1000px) {
+    .non-compatible-motherboard-img {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .non-compatible-motherboard-message {
+      font-size: 15px;
+      width: 580px;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+    .non-compatible-motherboard-message {
+      font-size: 13px;
+      width: 503px;
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .non-compatible-motherboard-message {
+      font-size: 11px;
+      width: 90%;
+    }
+
+    .non-compatible-motherboard-img {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width:470px) {
+    .non-compatible-motherboard-message {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width:370px) {
+    .non-compatible-motherboard-img {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width:140px) {
+    .non-compatible-motherboard-message {
+      width: 80%;
+    }
+  }

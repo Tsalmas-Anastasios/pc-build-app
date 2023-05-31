@@ -1,0 +1,32 @@
+.searchBar {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #0071c5;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-family: verdana;
+  outline: none;
+  margin-left: 5px;
+  margin-right: 5px;;
+}
+
+.searchBar:focus {
+  width: 97%;
+}
+
+.br-after-form-for-search {
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  .br-after-form-for-search {
+    display: block;
+  }
+}

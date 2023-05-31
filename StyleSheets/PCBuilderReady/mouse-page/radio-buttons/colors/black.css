@@ -1,0 +1,98 @@
+/* The container */
+.containerRadioButtonBlackColor {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadioButtonBlackColor input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkRadioButtonBlackColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadioButtonBlackColor:hover input ~ .checkmarkRadioButtonBlackColor {
+  background-color: #333333;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadioButtonBlackColor input:checked ~ .checkmarkRadioButtonBlackColor {
+  background-color: #666;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadioButtonBlackColor:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadioButtonBlackColor input:checked ~ .checkmarkRadioButtonBlackColor:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadioButtonBlackColor .checkmarkRadioButtonBlackColor:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+@media screen and (max-width:800px) {
+    .containerRadioButtonBlackColor {
+      display: block;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .checkmarkRadioButtonBlackColor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+  
+    /* Style the indicator (dot/circle) */
+    .containerRadioButtonBlackColor .checkmarkRadioButtonBlackColor:after {
+        top: 4px;
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: white;
+    }
+  }

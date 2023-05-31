@@ -1,0 +1,122 @@
+.modal-share {
+	/*display: none;*/
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 10px 6px 49px -14px rgba(0,0,0,0.84);
+    -webkit-box-shadow: 10px 6px 49px -14px rgba(0,0,0,0.84);
+    -moz-box-shadow: 10px 6px 49px -14px rgba(0,0,0,0.84);
+    border-radius: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  	z-index: 99999999999;
+    font-family: verdana;
+}
+
+.modal-share .content {
+	padding: 15px;
+}
+
+.modal-share .content .close {
+	border: 2px solid #1a0033fa;
+	width: 100%;
+    display: block;
+    position: relative;
+    bottom: 0;
+    background-color: #1a0033fa;
+    color: #fff;
+    border-radius: 40px;
+    transition: 0.7s;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-share .content .close:hover {
+	color: #1a0033fa;
+    background-color: #fff;
+}
+
+.modal-share .content .apps-share {
+	text-align: center;
+}
+
+.modal-share .content .apps-share .friends, .modal-share .content .apps-share .copy {
+	width: 90px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.modal-share .content .apps-share .copied-link {
+	display: block;
+    position: relative;
+    bottom: -25px;
+    width: 1px;
+}
+
+.modal-share .choose-friends {
+	padding: 10px;
+}
+
+.modal-share .choose-friends .friends {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.modal-share .choose-friends .send {
+	border: 2px solid #1a0033fa;
+	width: 100%;
+    display: block;
+    position: relative;
+    bottom: 0;
+    background-color: #1a0033fa;
+    color: #fff;
+    border-radius: 40px;
+    transition: 0.7s;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-share .choose-friends .back {
+	font-size: 24px;
+    cursor: pointer;	
+    color: #ccc;
+    transition: 0.7s;
+}
+
+.modal-share .choose-friends .back:hover {
+	color: #1a0033fa;
+}
+
+@media screen and (max-width: 521px) {
+	.modal-share {
+    	width: 95%;
+    }
+    
+    .modal-share .content .close {
+    	font-size: 16px;
+    }
+    
+    .modal-share .choose-friends .send {
+    	font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+	.modal-share .content .apps-share .friends, .modal-share .content .apps-share .copy {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 275px) {
+	.modal-share .content .apps-share .friends, .modal-share .content .apps-share .copy {
+    	width: 65px;
+    }
+}

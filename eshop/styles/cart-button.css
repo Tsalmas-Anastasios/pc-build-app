@@ -1,0 +1,49 @@
+.more-options {
+    display: block;
+}
+
+.more-options .shopping-cart {
+    position: fixed;
+    bottom: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.more-options .shopping-cart .button {
+    background-color: #b3b3b3;
+    box-shadow: 3px -10px 30px 0px rgba(171,171,171,0.75);
+    -webkit-box-shadow: 3px -10px 30px 0px rgba(171,171,171,0.75);
+    -moz-box-shadow: 3px -10px 30px 0px rgba(171,171,171,0.75);
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 2px solid #b3b3b3;
+    border-radius: 0 8px 0 0;
+}
+
+.more-options .shopping-cart .button a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #1a0033fa;
+    font-family: verdana;
+    transition: 0.7s;
+}
+
+.more-options .shopping-cart .button a:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.more-options .shopping-cart .button a .sup {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .more-options .shopping-cart .button {
+        display: block;
+    }
+}

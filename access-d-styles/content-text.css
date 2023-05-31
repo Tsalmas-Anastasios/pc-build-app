@@ -1,0 +1,65 @@
+.content .text {
+    margin-bottom: 20px;
+}
+
+.content .text #email {
+    font-family: verdana;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #1a0033fa;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.content .text #submit {
+    font-family: verdana;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #1a0033fa;
+    border-radius: 8px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+    .content .text #email {
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 250px;
+    }
+
+    .content .text #submit {
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #fff;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content .text {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content .text #email {
+        width:90%;
+        margin-bottom: 5px;
+    }
+
+    .content .text #submit {
+        width: 95%;
+    }
+}

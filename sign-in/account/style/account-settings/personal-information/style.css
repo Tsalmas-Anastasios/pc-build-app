@@ -1,0 +1,127 @@
+.information {
+  font-family: verdana;
+  width: 700px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.information .button-info {
+  display: block;
+  width: 700px;
+  outline: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: #fff;
+  border: 2px solid #1a0033fa;
+  background-color: #1a0033fa;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.information #year, .information #sex_element {
+  margin-left: 10px;
+}
+
+.information #year #error_message1, .information #sex_element #message_error2 {
+  display: block;
+  color: #ff0000;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.information #year {
+  font-size: 20px;
+  color: #1a0033fa;
+}
+
+.information #year .text-day, .information #year .text-month, .information #year .text-year {
+  font-size: 20px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  outline: none;
+  border: 2px solid #1a0033fa;
+  border-radius: 10px;
+}
+
+.information #year .text-day, .information #year .text-month {
+  width: 35px;
+}
+
+.information #year .text-year {
+  width: 55px;
+}
+
+.information .button-save {
+  text-align: right;
+  width: 700px;
+  padding-top: 30px;
+  display: block;
+}
+
+.information .button-save .save-changes {
+  transition: 0.7s;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1a0033fa;
+  border: 2px solid #1a0033fa;
+  outline: none;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.information .button-save .save-changes:hover {
+  color: #1a0033fa;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 718px) {
+  .information {
+    width: 100%;
+  }
+  
+  .information .button-info {
+    width: 100%;
+  }
+  
+  .information .button-save {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .information .button-save .save-changes {
+    font-size: 16px;
+    border-radius: 6px;
+  }  
+}
+
+@media screen and (max-width: 270px) {
+  .information #year {
+    font-size: 16px;
+  }
+  
+  .information #year .text-day, .information #year .text-month, .information #year .text-year {
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px;
+  }
+  
+  .information #year .text-day, .information #year .text-month {
+    width: 27px;
+  }
+  
+  .information #year .text-year {
+    width: 43px;
+  }
+}

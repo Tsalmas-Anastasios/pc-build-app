@@ -1,0 +1,129 @@
+body {
+	background-color: #8400ff;
+    font-family: verdana;
+}
+
+.register {
+	background-color: #fff;
+    padding: 15px;
+    margin-top: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    width: 300px;
+}
+
+.register .title {
+	text-align: center;
+    color: #1a0033;
+    margin: -2px;
+    font-size: 25px;
+}
+
+.register .line {
+	border: 0.001cm solid #1a0033;
+    border-radius: 7px 7px 7px 7px;
+    width: 100%;
+}
+
+.register .submit {
+	border: 2px solid #1a0033;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #1a0033;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 12px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.register .submit:hover {
+	background-color: #fff;
+    color: #1a0033;
+}
+
+.register .tabs {
+	margin-bottom: 12px;
+}
+
+.register .tabs a {
+	text-decoration: none;
+    color: #1a0033;
+    display: inline-block;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.register .tabs .active {
+	border-bottom: 2px solid #1a0033;
+}
+
+.register .user, .register .pass, .register .mail {
+	font-size: 24px;
+    color: #1a0033;
+}
+
+.register .mail {
+	margin-left: -3px;
+}
+
+.register .user-text {
+	margin-top: 10px;
+	margin-bottom: 10px;
+    display: inline-block;
+}
+
+.register .pass-text, .register .mail-text {
+	margin-bottom: 10px;
+}
+
+.register .user, .register .pass, .register .mail {
+    display: inline-block;
+}
+
+.register .user-text, .register .pass-text, .register .mail-text {
+	display: inline-block;
+}
+
+.register .user-text .username, .register .pass-text .password, .register .mail-text .mailbox {
+	font-size: 20px;
+    padding: 4px;
+    outline: none;
+    border: 1px solid #1a0033;
+}
+
+@media screen and (max-width: 330px) {
+    .register {
+        width: 180px;
+    }
+
+    .register .title {
+    	font-size: 18px;
+    }
+
+	.register .user, .register .pass, .register .mail {
+    	display: none;
+    }
+    
+    .register .submit {
+    	font-size: 13px;
+    }
+    
+    .register .tabs a {
+    	font-size: 12px;
+    }
+    
+    .register .user-text .username, .register .pass-text .password, .register .mail-text .mailbox {
+    	font-size: 13px;
+    }
+}

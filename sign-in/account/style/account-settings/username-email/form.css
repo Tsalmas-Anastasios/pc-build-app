@@ -1,0 +1,164 @@
+.form {
+  font-family: verdana;
+  font-size: 24px;
+  width: 475px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 5px;
+  text-align: center;
+  border: 2px solid #1a0033fa;
+  border-radius: 10px;
+}
+
+.form #error-message {
+  font-size: 12px;
+  text-align: left;
+  float: left;
+  margin-top: 5px;
+  margin-left: 9px;
+  color: #ff0000;
+}
+
+.form .username, .form .email {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form .username label, .form .email label {
+   color: #1a0033fa;
+}
+
+.form .username label {
+  margin-right: 30px;
+}
+
+.form .username label:after {
+  content: ' Username';
+}
+
+.form .email label {
+  margin-right: 73px;
+}
+
+.form .email label:after {
+  content: ' E-mail';
+}
+
+.form .username .textbox, .form .email .textbox {
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #1a0033fa;
+  border-radius: 6px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form .submit-btn {
+  width: 475px;
+}
+
+.form .submit-btn #submit {
+  font-family: verdana;
+  outline: none;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 2px;
+  background-color: #1a0033fa;
+  border: 2px solid #1a0033fa;
+  color: #fff;
+  transition: 0.7s;
+  border-radius: 8px;
+  margin-top: 30px;
+  float: right;
+  margin-right: 16px;
+  margin-bottom: 10px;
+}
+
+.form .submit-btn #submit:hover {
+  color: #1a0033fa;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 475px) {
+  .form {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form .username label {
+    margin-right: 5px;
+  }
+  
+  .form .email label {
+    margin-right: 3px;
+  }
+  
+  .form .username label:after {
+    content: '';  
+  }
+  
+  .form .email label:after {
+    content: '';  
+  }
+  
+  .form .submit-btn {
+    width: 100%;
+  }
+  
+  .form .submit-btn #submit {
+    float: none;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .form {
+    font-size: 18px;
+  }
+  
+  .form .username .textbox, .form .email .textbox {
+    font-size: 16px;
+  }
+  
+  .form .submit-btn #submit {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 262px) {
+  .form {
+    text-align: left;  
+  }
+  
+  .form .username label {
+    display: none;
+  }
+  
+  .form .username .textbox, .form .email .textbox {
+    width: 85%;
+    margin: 0;
+    margin-left: 2px;
+  }
+  
+  .form .email label {
+    display: none;
+  }
+  
+  .form .submit-btn #submit {
+    width: 94%;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 194px) {
+  .form .username .textbox, .form .email .textbox {
+    width: 85%;
+  }
+}

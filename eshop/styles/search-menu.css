@@ -1,0 +1,57 @@
+.m {
+    text-align: center;
+    width: 100%;
+}
+
+.m .search-menu {
+    font-family: verdana;
+    width: 600px;
+    box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -webkit-box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -moz-box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 999999999;
+    position: relative;
+    margin: auto;
+}
+
+.m .search-menu .menu {
+    width: 100%;
+    text-align: left;
+}
+
+.m .search-menu .menu .title {
+    font-size: 15px;
+    color: #333333;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.m .search-menu .menu a {
+    display: block;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 15px;
+    color: #8c8c8c;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.m .search-menu .menu a:hover {
+    color: #333333;
+    background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 610px) {
+    .m .search-menu {
+        width: 95%;
+    }
+}

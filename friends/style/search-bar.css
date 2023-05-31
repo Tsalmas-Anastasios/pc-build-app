@@ -1,0 +1,160 @@
+body {
+    background-color: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.search-friend {
+    font-family: verdana;
+}
+
+.search-form .form-div, .search-form .menu {
+    display: block;
+}
+
+.search-form .form-div {
+    margin: auto;
+    text-align: center;
+    max-width: 550px;
+}
+
+.search-friend form {
+    margin-top: 15px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.search-friend #search-bar {
+    font-family: verdana;
+    outline: none;
+    width: 550px;
+    padding: 4px;
+    padding-left: 10px;
+    border: 2px solid #1a0033fa;
+}
+
+.search-friend #submit {
+    font-family: verdana;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+    background-color: #1a0033fa;
+    border: 2px solid #1a0033fa;
+    padding-top: 3px;
+    padding-bottom: 3.7px;
+    position: relative;
+    cursor: pointer;
+    border-left: none;
+    float: left;
+}
+
+.search-friend #submit:after {
+    content: ' Search';
+}
+
+/*SEARCH MENU*/
+.search-friend .menu {
+    text-align: left;
+    width: 550px;
+    background-color: #fff;
+    box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -webkit-box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -moz-box-shadow: 0px 17px 29px 0px rgba(169,169,169,0.73);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 999999999;
+    position: relative;
+}
+
+.search-friend .menu .people {
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    color: #595959;
+}
+
+.search-friend .menu .list-options {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow:hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.search-friend .menu .list-options:hover {
+    background-color: #d9d9d9;
+}
+
+.search-friend .menu .start {
+    padding-top: 7px;
+}
+
+/*SEARCH MENU*/
+
+@media screen and (max-width: 650px) {
+    .search-friend form {
+        max-width: 300px;
+    }
+
+    .search-friend #search-bar {
+        width: 300px;
+    }
+
+    .search-friend .menu {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-friend form {
+        max-width: 250px;
+    }
+
+    .search-friend #search-bar {
+        width: 250px;
+    }
+
+    .search-friend #submit {
+        width: 20%;
+    }
+
+    .search-friend #submit:after {
+        content: '';
+    }
+
+    .search-friend .menu {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .search-friend form {
+        max-width: 90%;
+    }
+
+    .search-friend #search-bar {
+        width: 100%;
+    }
+
+    .search-friend #submit {
+        width: 20%;
+    }
+
+    .search-friend #submit:after {
+        content: '';
+    }
+
+    .search-friend .menu {
+        width: 90%;
+    }   
+}

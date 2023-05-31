@@ -1,0 +1,30 @@
+.admin-login {
+    text-align: right;
+    display: block;
+}
+
+.admin-login .text {
+    text-decoration: none;
+    color: #1a0033fa;
+    background-color: #fff;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.7s
+}
+
+.admin-login .text:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .admin-login {
+        display: none;
+    }
+}

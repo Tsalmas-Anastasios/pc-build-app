@@ -1,0 +1,88 @@
+.notification-space {
+    background-color: #fff;
+    box-shadow: 0px 8px 36px 13px rgba(156,156,156,0.71);
+    -webkit-box-shadow: 0px 8px 36px 13px rgba(156,156,156,0.71);
+    -moz-box-shadow: 0px 8px 36px 13px rgba(156,156,156,0.71);
+    width: 70%;
+    margin:auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-family: verdana;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 1.2s;
+	margin-top: 30px;
+}
+
+.notification-space .space {
+    padding-right: 23px;
+    padding-left: 23px;
+}
+
+.notification-space .space .a-notification {
+    text-decoration: none;
+}
+
+.notification-space .space .a-notification .notification {
+    box-shadow: -2px 1px 35px 4px rgba(204,204,204,0.93);
+    -webkit-box-shadow: -2px 1px 35px 4px rgba(204,204,204,0.93);
+    -moz-box-shadow: -2px 1px 35px 4px rgba(204,204,204,0.93);
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    color: #000;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.notification-space .space .a-notification .first-field {
+    width: 75px;
+    text-align: center;
+}
+
+.notification-space .space .a-notification .first-field .image .img-notification {
+    width: 40px;
+    height: 40px;
+}
+
+.notification-space .space .a-notification .second-field .text:hover {
+    text-decoration: underline;
+}
+
+.notification-space .space .see-more {
+    text-align: right;
+}
+
+.notification-space .space .a-notification .second-field .date-time {
+    font-family: verdana;
+    color: #808080;
+    font-size: 12px;
+}
+
+.notification-space .space .see-more .see-more-btn {
+    font-family: verdana;
+    margin-bottom: 23px;
+    font-size: 16px;
+    background-color: #1a0033fa;
+    color: #fff;
+    border: 2px solid #1a0033fa;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.notification-space .space .see-more .see-more-btn:hover {
+    background-color: #fff;
+    color: #1a0033fa;
+}
+/*responsive*/
+@media screen and (max-width: 800px) {
+    .notification-space {
+        width: 95%;
+    }
+}

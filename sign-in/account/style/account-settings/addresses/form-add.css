@@ -1,0 +1,264 @@
+.add {
+  width: 555px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid #1a0033fa;
+  border-radius: 10px;
+  font-family: verdana;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.add .form {
+  text-align: left;
+  padding: 15px;
+}
+
+.add .form #error-message {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.add .form form {
+  width: 100%;  
+}
+
+.add .form .title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #1a0033fa;
+}
+
+.add .form .title-explain {
+  font-size: 13px;
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.add .form input[type=text], .add .form select, .add .form input[type=tel], .add .form .text-notes {
+  font-family: verdana;
+  outline: none;
+  border: 2px solid #1a0033fa;
+  font-size: 16px;
+  padding: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.add .form .text-title {
+  width: 500px;
+  display: block;
+}
+
+.add .form .text-name, .add .form .text-surname {
+  width: 235px;
+}
+
+.add .form .text-street {
+  width: 350px;
+}
+
+.add .form .text-number {
+  width: 120px;
+  text-align: center;
+}
+
+.add .form .text-country {
+  width: 525px;
+  display: block;
+}
+
+.add .form .text-city {
+  width: 350px;
+}
+
+.add .form .text-postal {
+  width: 120px;
+  text-align: center;
+}
+
+.add .form .text-law {
+  width: 525px;
+  display: block;
+}
+
+.add .form .text-tele, .add .form .text-mobile {
+  width: 235px;
+}
+
+.add .form .text-notes {
+  display: block;
+  resize: vertical;
+  width: 500px;
+}
+
+.add .form .submit {
+  font-family: verdana;
+  outline: none;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 2px;
+  background-color: #1a0033fa;
+  border: 2px solid #1a0033fa;
+  color: #fff;
+  transition: 0.7s;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.add .form .submit:hover {
+  color: #1a0033fa;
+  background-color: #fff;
+}
+
+@media screen and (max-height: 670px) {
+  .add {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+  
+  .add .form .submit {
+    float: none; 
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .add {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .add {
+    border: none;
+    width: 480px;
+  }
+  
+  .add .form .text-title {
+    width: 425px;
+  }
+  
+  .add .form .text-name, .add .form .text-surname {
+    width: 198px;
+  }
+  
+  .add .form .text-street {
+    width: 275px;
+  }
+  
+  .add .form .text-country {
+    width: 450px;
+  }
+  
+  .add .form .text-city {
+    width: 275px;
+  }
+  
+  .add .form .text-law {
+    width: 450px;
+  }
+  
+  .add .form .text-tele, .add .form .text-mobile {
+    width: 198px;
+  }
+  
+  .add .form .text-notes {
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .add {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+  
+  .add .form .submit {
+    float: none; 
+    display: block;
+    width: 100%;
+  }
+  
+  .add .form .text-title {
+    width: 95%;
+  }
+  
+  .add .form .text-name, .add .form .text-surname {
+    width: 95%;
+  }
+  
+  .add .form .text-street {
+    width: 95%;
+  }
+  
+  .add .form .text-number {
+    width: 95%;
+    text-align: left;
+  }
+  
+  .add .form .text-country {
+    width: 101%;
+  }
+  
+  .add .form .text-city {
+    width: 95%;
+  }
+  
+  .add .form .text-postal {
+    width: 95%;
+    text-align: left;
+  }
+  
+  .add .form .text-law {
+    width: 101%;
+  }
+  
+  .add .form .text-tele, .add .form .text-mobile {
+    width: 95%;
+  }
+  
+  .add .form .text-notes {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .add .form .text-country {
+    width: 102%;
+  }
+  
+  .add .form .text-law {
+    width: 102%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .add {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}

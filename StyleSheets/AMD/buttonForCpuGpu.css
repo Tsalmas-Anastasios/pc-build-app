@@ -1,0 +1,54 @@
+.go-with-cpu-gpu {
+    display: block;
+    position: -webkit-fixed;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -1px;
+    width: 100%;
+    padding: 9px;
+    font-family: verdana;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #b32400;
+    border: 2px solid #b32400;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    z-index: 9999;
+    outline: none;
+}
+
+@media screen and (max-width: 450px) {
+    .go-with-cpu-gpu {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .go-with-cpu-gpu {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .go-with-cpu-gpu {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .go-with-cpu-gpu {
+        font-size: 7px;
+        padding: 2px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+}
+
+@media screen and (max-width: 170px) {
+    .go-with-cpu-gpu {
+        font-size: 5px;
+        padding: 0;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+}

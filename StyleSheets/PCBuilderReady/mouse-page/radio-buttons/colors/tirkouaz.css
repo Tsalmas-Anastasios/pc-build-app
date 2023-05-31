@@ -1,0 +1,98 @@
+/* The container */
+.containerRadioButtonTirkouazColor {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadioButtonTirkouazColor input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkRadioButtonTirkouazColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #24dbc9;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadioButtonTirkouazColor:hover input ~ .checkmarkRadioButtonTirkouazColor {
+  background-color: #a7f1e9;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadioButtonTirkouazColor input:checked ~ .checkmarkRadioButtonTirkouazColor {
+  background-color: #40e0d0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadioButtonTirkouazColor:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadioButtonTirkouazColor input:checked ~ .checkmarkRadioButtonTirkouazColor:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadioButtonTirkouazColor .checkmarkRadioButtonTirkouazColor:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+@media screen and (max-width:800px) {
+    .containerRadioButtonTirkouazColor {
+      display: block;
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .checkmarkRadioButtonTirkouazColor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      background-color: #800080;
+      border-radius: 50%;
+    }
+  
+    /* Style the indicator (dot/circle) */
+    .containerRadioButtonTirkouazColor .checkmarkRadioButtonTirkouazColor:after {
+        top: 4px;
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: white;
+    }
+}

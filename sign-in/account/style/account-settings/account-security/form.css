@@ -1,0 +1,214 @@
+.error-message {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 9px;
+  color: #ff0000;
+  display: block;
+}
+
+.security {
+  font-family: verdana;
+}
+
+.security .password-change .title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.security .password-change #change-password .password {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  color: #404040;
+}
+
+.security .password-change #change-password .password input[type=password] {
+  font-family: verdana;
+  font-size: 18px;
+  border: 2px solid #1a0033fa;
+  border-radius: 7px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 199px;
+  outline: none;
+}
+
+.security .password-change #change-password .password #new_password {
+  margin-left: 35px;
+}
+
+.security .password-change #change-password .password #old_password {
+  margin-left: 43px;
+}
+
+.security .password-change #change-password .password #confirm_password {
+  margin-left: 4px;
+}
+
+.security .password-change #change-password .submit button {
+  font-family: verdana;
+  outline: none;
+  background-color: #1a0033fa;
+  border: 2px solid #1a0033fa;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.7s;
+  cursor: pointer;
+  margin-left: 295px;
+}
+
+.security .password-change #change-password .submit button:hover {
+  opacity: 0.6;
+}
+
+.security .delete-acc .title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.security .delete-acc .text {
+  font-size: 18px;
+  color: #404040;
+}
+
+.security .delete-acc .text #delete_account .delete {
+  font-family: verdana;
+  outline: none;
+  background-color: #1a0033fa;
+  border: 2px solid #1a0033fa;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.security .delete-acc .text #delete_account .delete:hover {
+  color: #1a0033fa;
+  background-color: #fff;
+}
+
+.security .delete-acc .text #delete_account .sure {
+  margin-top: 10px;  
+  margin-left: 3px;
+}
+
+.security .delete-acc .text #delete_account .sure .text {
+  font-size: 14px;
+}
+
+.security .delete-acc .text #delete_account .sure .yes-no .yes-btn {
+  font-family: verdana;
+  outline: none;
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.7s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.security .delete-acc .text #delete_account .sure .yes-no .yes-btn:hover {
+  color: #ff0000;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 410px) {
+  .security .password-change .title {
+    font-size: 18px;
+  }
+  
+  .security .password-change #change-password .password {
+    font-size: 15px;
+  }
+  
+  .security .password-change #change-password .password input[type=password] {
+    font-size: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 165px;
+  }
+  
+  .security .password-change #change-password .password #new_password {
+    margin-left: 30px;
+  }
+
+  .security .password-change #change-password .password #old_password {
+    margin-left: 36px;
+  }
+
+  .security .password-change #change-password .password #confirm_password {
+    margin-left: 4px;
+  }
+  
+  .security .password-change #change-password .submit button {
+    margin-left: 0;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .security .delete-acc .title {
+    font-size: 18px; 
+  }
+  
+  .security .delete-acc .text {
+    font-size: 16px; 
+  }
+  
+  .security .delete-acc .text #delete_account .delete {
+    font-size: 15px; 
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .security .password-change #change-password .password label {
+    display: none;
+  }
+  
+  .security .password-change #change-password .password input[type=password] {
+    width: 95%;
+    font-size: 18px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  
+  .security .password-change #change-password .password #new_password {
+    margin-left: 0px;
+  }
+
+  .security .password-change #change-password .password #old_password {
+    margin-left: 0px;
+  }
+
+  .security .password-change #change-password .password #confirm_password {
+    margin-left: 0px;
+  }
+  
+  .security .password-change #change-password .submit button {
+    width: 100%; 
+  }
+}
